@@ -107,7 +107,7 @@ internal static class RatConfig {
 			internal static TarkovTrackerBackend Backend = TarkovTrackerBackend.TarkovTrackerIO;
 			internal static string Endpoint => Backend == TarkovTrackerBackend.TarkovTrackerIO 
 				? "https://tarkovtracker.io/api/v2" 
-				: "https://tarkovtracker.org/api/v2";
+				: "https://api.tarkovtracker.org";
 			internal static bool Enable => Token.Length > 0;
 
 			// TarkovTracker keeps progress separate per game mode and its API tokens
