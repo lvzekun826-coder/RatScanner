@@ -119,6 +119,7 @@ public class RatScannerMain : INotifyPropertyChanged {
 	}
 
 	private void CheckForUpdates() {
+		return;
 		string mostRecentVersion = ApiManager.GetResource(ApiManager.ResourceType.ClientVersion);
 		if (RatConfig.Version == mostRecentVersion) return;
 		Logger.LogInfo("A new version is available: " + mostRecentVersion);
